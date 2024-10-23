@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+       
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <img class="navbar-brand" src="resources/images/brand.webp" style="height: 40px;"></img>
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" data-bs-toggle="modal" href="#exampleModalToggle" role="button"> <i class="fa fa-plus-circle"
+                                        aria-hidden="true"></i> New
+                                    <span class="visually-hidden">(current)</span></a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false"> <i class="fa fa-file-archive"
+                                        aria-hidden="true"></i> Export</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" href="#"> <i class="fa fa-file-pdf" aria-hidden="true"></i>
+                                        PDF</a>
+                                    <a class="dropdown-item" href="#"> <i class="fa fa-file-excel"
+                                            aria-hidden="true"></i> Excel</a>
+                                    <a class="dropdown-item" href="#"> <i class="fa fa-file-text"
+                                            aria-hidden="true"></i> CSV</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> <i class="fa fa-gears" aria-hidden="true"></i>
+                                    Settings</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex my-2 my-lg-0">
+                            <input class="form-control me-sm-2" type="text" placeholder="Search" />
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                                Search
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+
+
+
+
+        </div>
+
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalToggleLabel">
+                            Modal 1
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Show a second modal and hide this one with the button
+                        below.
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                            Open second modal
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+    </header>
+    <main>
+        <div class="container">
+            <div class="row my-5">
+                <!-- Nav tabs -->
+                <ul class="nav nav-pills nav-fill bg-light" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                            type="button" role="tab" aria-controls="home" aria-selected="true">
+                            Quick Reports
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                            type="button" role="tab" aria-controls="profile" aria-selected="false">
+                            Detailed Reports
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages"
+                            type="button" role="tab" aria-controls="messages" aria-selected="false">
+                            Projects List
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content pt-2">
+                    <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="container">
+                            <div class="row my-4">
+                                <div class="progress" style="height: 25px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 50%;"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        2 Projects completed
+                                    </div>
+                                </div>
+
+                              
+                                
+
+
+                            </div>
+                            <div class="row my-4">
+                                <div class="col-lg-4">
+                                    <div class="card text-white bg-primary">
+                                        <div class="card-body">
+                                            <h4 class="card-title"> <i class="fa fa-hourglass" aria-hidden="true"></i>
+                                                In Progress</h4>
+                                            <p class="card-text">5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card text-white bg-success">
+                                        <div class="card-body">
+                                            <h4 class="card-title"> <i class="fa fa-check-circle"
+                                                    aria-hidden="true"></i> Completed</h4>
+                                            <p class="card-text">10</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="card text-white bg-danger">
+                                        <div class="card-body">
+                                            <h4 class="card-title"> <i class="fa fa-clock" aria-hidden="true"></i>
+                                                Delayed</h4>
+                                            <p class="card-text">2</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                            <div class="row my-4">
+                                <div class="col-lg-12">
+                                    <canvas id="chart1"></canvas>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+
+                        <div class="container">
+
+
+                            <div class="row my-4">
+
+                                <div class="col-lg-8">
+                                    <canvas id="chart1-1"></canvas>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <canvas id="chart3"></canvas>
+                                </div>
+
+                            </div>
+                            <div class="row my-4">
+
+                                <div class="col-lg-8">
+                                    <canvas id="chart2"></canvas>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <canvas id="chart4"></canvas>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+                        <div class="table-responsive">
+                            <table class="table text-center">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Owner</th>
+                                        <th scope="col">Priority</th>
+                                        <th scope="col">Actions</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="">
+                                        <td>Generate customer invoice</td>
+                                        <td>
+
+                                            <p>
+                                                Jeremy Carols Rodriguz
+                                            </p>
+
+
+
+                                        </td>
+
+                                        <td><span class="badge rounded-pill text-bg-danger">High</span>
+                                        </td>
+                                        <td> <a href="#"> <i class="fa fa-check fa-lg text-success"></i> </a>
+                                            <a href="#"> <i class="fa fa-trash fa-lg text-warning"
+                                                    aria-hidden="true"></i> </i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>Generate customer invoice</td>
+                                        <td>
+
+                                            <p>
+                                                Jeremy Carols Rodriguz
+                                            </p>
+
+
+
+                                        </td>
+
+                                        <td><span class="badge rounded-pill text-bg-danger">High</span>
+                                        </td>
+                                        <td> <a href="#"> <i class="fa fa-check fa-lg text-success"></i> </a>
+                                            <a href="#"> <i class="fa fa-trash fa-lg text-warning"
+                                                    aria-hidden="true"></i> </i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="d-flex justify-content-center">
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item active" aria-current="page">
+                                            <a class="page-link" href="#">1</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+
+
+
+    </script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
