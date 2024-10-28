@@ -26,8 +26,6 @@
 <body>
     <header>
         <div class="container-fluid">
-       
-
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container">
                     <img class="navbar-brand" src="resources/images/brand.webp" style="height: 40px;"></img>
@@ -78,24 +76,183 @@
 
         </div>
 
-        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        <div class="modal fade modal-xl" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
             tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalToggleLabel">
-                            Modal 1
+                    <div class="modal-header bg-dark text-white">
+                        <h5 class="modal-title " id="exampleModalToggleLabel">
+                           New Project
                         </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        Show a second modal and hide this one with the button
-                        below.
+                       
+                        <div class="container mt-5">
+
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <b> Project Details </b>
+                
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="projectName" class="form-label">Name</label>
+                
+                                                        <div class="input-group">
+                                                            <div class="input-group-text"> <i class="fa fa-tag" aria-hidden="true"></i>
+                                                            </div>
+                                                            <input type="text" class="form-control" id="projectName"
+                                                                placeholder="Enter project name">
+                
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                
+                                                    <div class="mb-3">
+                                                        <label for="projectBudget" class="form-label">Budget</label>
+                                                        <div class="input-group">
+                                                            <div class="input-group-text"> <i class="fa fa-dollar"
+                                                                    aria-hidden="true"></i> </div>
+                                                            <input type="number" class="form-control" id="projectBudget"
+                                                                placeholder="Enter budget">
+                                                        </div>
+                                                    </div>
+                
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="startDate" class="form-label">Start Date</label>
+                                                        <div class="input-group">
+                                                            <div class="input-group-text"> <i class="fa fa-calendar"
+                                                                    aria-hidden="true"></i> </div>
+                                                            <input type="date" class="form-control" id="startDate">
+                                                        </div>
+                                                    </div>
+                
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="endDate" class="form-label">End Date</label>
+                                                        <div class="input-group">
+                                                            <div class="input-group-text"> <i class="fa fa-calendar"
+                                                                    aria-hidden="true"></i> </div>
+                
+                                                            <input type="date" class="form-control" id="endDate">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="mb-3">
+                                                <label for="projectDescription" class="form-label">Description</label>
+                                                <textarea class="form-control" id="projectDescription" rows="3"></textarea>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="projectPriority" class="form-label">Priority</label>
+                                                <input type="range" class="form-range" id="projectPriority" min="1" max="3" value="2">
+                                                <div class="d-flex justify-content-between">
+                                                    <span>Low</span>
+                                                    <span> Medium</span>
+                                                    <span> High</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"   data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <b> Owner Details </b>
+                                            
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                        data-bs-parent="#accordionExample">  
+                
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label   for="projectOwner" class="form-label">Name</label>
+                
+                                                        <div class="input-group">
+                                                            <div class="input-group-text"> <i class="fa fa-id-card" aria-hidden="true"></i> </div>
+                                                            <input type="text" class="form-control" id="projectOwner" placeholder="Enter project owner">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="ownerEmail" class="form-label">Email</label>
+                                                        <div class="input-group">
+                
+                                                        <div class="input-group-text"> <i class="fa fa-envelope" aria-hidden="true"></i> </i> </div>
+                                                        <input type="email" class="form-control" id="ownerEmail"  
+                                                            placeholder="Enter owner email">
+                                                            </div>
+                
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="ownerPhone" class="form-label">Phone</label>
+                                                        <div class="input-group" id="inpg">
+                                                            <div class="input-group-text"> <i class="fa fa-phone"
+                                                                    aria-hidden="true"></i> </div>
+                                                            <input type="tel" class="form-control" id="ownerPhone"
+                                                                placeholder="Enter owner phone number">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="row my-3">
+                                            <div class="col-2">
+                                                <button type="submit" data-bs-toggle="tooltip" title="Click here to add the project!"
+                                                    class="btn btn-success"> <i class="fa fa-plus-square" aria-hidden="true"></i> Create</button>
+                                            </div>
+                
+                                            <div class="col-1">
+                
+                
+                                                <div class="spinner-border" role="status">
+                                                    <span class="visually-hidden">Loading...</span>
+                                                </div>
+                
+                                            </div>
+                
+                
+                                        </div>
+                
+                                    </div>
+                
+                                </div>
+                
+                
+                
+                            </div>
+                        </div>
+                
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
-                            Open second modal
-                        </button>
+                        
                     </div>
                 </div>
             </div>
@@ -105,6 +262,37 @@
     </header>
     <main>
         <div class="container">
+            <div class="row">
+                <div
+                    class="alert alert-success alert-dismissible fade show"
+                    role="alert"
+                >
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="alert"
+                        aria-label="Close"
+                    ></button>
+                
+                    <strong>Success!</strong> You created the project successfully
+                </div>
+
+                <div
+                    class="alert alert-danger alert-dismissible fade show"
+                    role="alert"
+                >
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="alert"
+                        aria-label="Close"
+                    ></button>
+                
+                    <strong>Error!</strong> Error while creating the project
+                </div>
+                
+                
+            </div>
             <div class="row my-5">
                 <!-- Nav tabs -->
                 <ul class="nav nav-pills nav-fill bg-light" id="myTab" role="tablist">
@@ -223,31 +411,36 @@
 
                     </div>
                     <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
-                        <div class="table-responsive">
-                            <table class="table text-center">
+                        <div class="table-responsive my-3">
+                            <table class="table">
                                 <thead>
                                     <tr>
                                         <th scope="col">Name</th>
                                         <th scope="col">Owner</th>
                                         <th scope="col">Priority</th>
+                                        <th scope="col">Progress</th>
                                         <th scope="col">Actions</th>
 
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr class="">
-                                        <td>Generate customer invoice</td>
+                                        <td>Small Business SEO Boost</td>
                                         <td>
-
-                                            <p>
-                                                Jeremy Carols Rodriguz
-                                            </p>
-
-
+                                            <img class="card-img rounded-circle" src="/resources/images/headshots/person6.jpg"
+                                                alt="avatar 1" style="width: 45px; height: auto;">
+                                             <span >Alex Turner</span>
 
                                         </td>
 
                                         <td><span class="badge rounded-pill text-bg-danger">High</span>
+                                        </td>
+
+                                        <td>
+
+                                            <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar progress-bar-striped bg-danger" style="width: 20%"></div>
+                                              </div>
                                         </td>
                                         <td> <a href="#"> <i class="fa fa-check fa-lg text-success"></i> </a>
                                             <a href="#"> <i class="fa fa-trash fa-lg text-warning"
@@ -255,19 +448,50 @@
                                             </a>
                                         </td>
                                     </tr>
+
                                     <tr class="">
-                                        <td>Generate customer invoice</td>
+                                        <td>Local Marketing Blitz</td>
                                         <td>
-
-                                            <p>
-                                                Jeremy Carols Rodriguz
-                                            </p>
-
-
+                                            <img class="card-img rounded-circle"  src="/resources/images/headshots/person1.jpg"
+                                                alt="avatar 1" style="width: 45px; height: auto;">
+                                             <span >Riley Chen</span>
 
                                         </td>
 
                                         <td><span class="badge rounded-pill text-bg-danger">High</span>
+                                        </td>
+
+                                        <td>
+
+                                            <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar progress-bar-striped bg-primary" style="width: 50%"></div>
+                                              </div>
+                                        </td>
+                                        
+                                        <td> <a href="#"> <i class="fa fa-check fa-lg text-success"></i> </a>
+                                            <a href="#"> <i class="fa fa-trash fa-lg text-warning"
+                                                    aria-hidden="true"></i> </i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>Brand Refresh and Rebranding</td>
+                                        <td>
+                                            <img class="card-img rounded-circle" src="/resources/images/headshots/person2.jpg"
+                                                alt="avatar 1" style="width: 45px; height: auto;">
+                                             <span >Noah Kim</span>
+
+                                        </td>
+
+                                        <td><span class="badge rounded-pill text-bg-danger">High</span>
+                                        </td>
+
+                                        <td>
+
+                                            <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar progress-bar-striped bg-primary" style="width: 70%"></div>
+                                              </div>
                                         </td>
                                         <td> <a href="#"> <i class="fa fa-check fa-lg text-success"></i> </a>
                                             <a href="#"> <i class="fa fa-trash fa-lg text-warning"
@@ -275,34 +499,113 @@
                                             </a>
                                         </td>
                                     </tr>
+
+                                    <tr class="">
+                                        <td>E-commerce Expansion</td>
+                                        <td>
+                                            <img class="card-img rounded-circle" src="/resources/images/headshots/person3.jpg"
+                                                alt="avatar 1" style="width: 45px; height: auto;">
+                                             <span >Sam Rodriguez</span>
+
+                                        </td>
+
+                                        <td><span class="badge rounded-pill text-bg-danger">High</span>
+                                        </td>
+
+                                        <td>
+
+                                            <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar progress-bar-striped bg-success" style="width: 100%"></div>
+                                              </div>
+                                        </td>
+                                        <td> <a href="#"> <i class="fa fa-check fa-lg text-success"></i> </a>
+                                            <a href="#"> <i class="fa fa-trash fa-lg text-warning"
+                                                    aria-hidden="true"></i> </i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>Social Media Engagement Campaign</td>
+                                        <td>
+                                            <img class="card-img rounded-circle" src="/resources/images/headshots/person4.jpg"
+                                                alt="avatar 1" style="width: 45px; height: auto;">
+                                             <span >Alex Lee</span>
+
+                                        </td>
+
+                                        <td><span class="badge rounded-pill text-bg-danger">High</span>
+                                        </td>
+
+                                        <td>
+
+                                            <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar progress-bar-striped bg-danger" style="width: 40%"></div>
+                                              </div>
+                                        </td>
+                                        <td> <a href="#"> <i class="fa fa-check fa-lg text-success"></i> </a>
+                                            <a href="#"> <i class="fa fa-trash fa-lg text-warning"
+                                                    aria-hidden="true"></i> </i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>Customer Loyalty Program</td>
+                                        <td>
+                                            <img class="card-img rounded-circle" src="/resources/images/headshots/person5.jpg"
+                                                alt="avatar 1" style="width: 45px; height: auto;">
+                                             <span >Riley Patel</span>
+
+                                        </td>
+
+                                        <td><span class="badge rounded-pill text-bg-danger">High</span>
+                                        </td>
+                                        <td>
+
+                                            <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar progress-bar-striped bg-danger" style="width: 40%"></div>
+                                              </div>
+                                        </td>
+                                        <td> <a href="#"> <i class="fa fa-check fa-lg text-success"></i> </a>
+                                            <a href="#"> <i class="fa fa-trash fa-lg text-warning"
+                                                    aria-hidden="true"></i> </i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                
                                 </tbody>
                             </table>
-                            <div class="d-flex justify-content-center">
-                                <nav aria-label="Page navigation">
-                                    <ul class="pagination">
-                                        <li class="page-item disabled">
-                                            <a class="page-link" href="#" aria-label="Previous">
-                                                <span aria-hidden="true">&laquo;</span>
-                                            </a>
-                                        </li>
-                                        <li class="page-item active" aria-current="page">
-                                            <a class="page-link" href="#">1</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">3</a>
-                                        </li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#" aria-label="Next">
-                                                <span aria-hidden="true">&raquo;</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
+                          
 
 
                         </div>
+
+                        <div class="d-flex justify-content-center">
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active" aria-current="page">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                     
                     </div>
                 </div>
 
